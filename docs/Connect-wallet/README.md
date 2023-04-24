@@ -1,9 +1,9 @@
 
 # Introduction
 
-Although blockchain promises to cut out the middleman and boost security, crypto still has its gatekeepers: Long learning curves and clunky, expensive tools. Throw in the risk of getting hacked, and it's no wonder most people stick to fiat.
+Founded in 2018, SafePal is a comprehensive crypto wallet suite providing hardware wallet, mobile app, and browser extension wallet solutions. As a non-custodial wallet suite, SafePal aims to allow users to own their crypto adventure, by empowering them to access opportunities securely in the decentralized world. 
 
-In 2018, Veronica Wong, a veteran in the tech industry, founded SafePal with two co-founders who shared her mission. Initially a hardware wallet, SafePal has since evolved to a complete suite of smart, secure crypto management solutions accessible for tech pros and non-geeks alike.
+The SafePal platform serves more than 10 million users across the globe and supports 15 languages, 56+ blockchains with their tokens and NFTs. It also encompasses crypto asset management solutions like cross-chain swapping, trading and yielding tools for users.
 
-In only a handful of years, we've garnered the support of industry giants like Binance and risen from a humble (but ambitious) startup to a global enterprise bringing the freedom and power of crypto to millions – and we're just getting started.
+The SafePal S1 is the first and only hardware wallet to receive a strategic investment in 2018 by Binance Labs- It is the flagship cold-storage product trusted in over 200 regions and countries with advanced security features that keeps private keys offline and secure, without Bluetooth, WiFi, NFC, or radio frequencies.
 

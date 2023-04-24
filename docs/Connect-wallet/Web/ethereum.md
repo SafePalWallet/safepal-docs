@@ -1,6 +1,6 @@
 # Ethereum(EVM)
 
-SafePal injects a global API into websites visited by its users at `window?.safepal?.ethereum`. This API allows websites to request users' Ethereum accounts, read data from blockchains the user is connected to, and suggest that the user sign messages and transactions. The presence of the provider object indicates an Ethereum user.
+SafePal injects a global API into websites visited by its users at `window.safepalProvider`. This API allows websites to request users' Ethereum accounts, read data from blockchains the user is connected to, and suggest that the user sign messages and transactions. The presence of the provider object indicates an Ethereum user.
 
 ## Detect the Ethereum provider
 
@@ -8,7 +8,7 @@ SafePal injects a global API into websites visited by its users at `window?.safe
 function getProvider() {
   const provider = window.safepalProvider;
   if (!provider) {
-    window.open('https://safepal.com/en/download?type=2');
+    window.open('https://www.safepal.com/download?product=2');
     throw "Please go to our official website to download!!"
   }
   return provider;
@@ -18,11 +18,11 @@ function getProvider() {
 
 For any non-trivial Ethereum web application — a.k.a. dapp, web3 site etc. — to work, you will have to:
 
-  1. Detect the Ethereum provider (`window?.safepal?.ethereum`)
+  1. Detect the Ethereum provider (`window.safepalProvider`)
   2. Detect which Ethereum network the user is connected to
   3. Get the user's Ethereum account(s)
 
-You can refer to [eth-requestaccounts](#eth-requestaccounts) or [address-conflicts-when-switching-network](/faq.html#_3-address-conflicts-when-switching-network) code snippet 
+You can refer to [eth-requestaccounts](#eth-requestaccounts) code snippet 
 
 
 The provider API is all you need to create a full-featured web3 application.
@@ -36,11 +36,10 @@ You can  use third-party libraries in conjunction with `window.safepalProvider`
     -  [web3js](https://www.npmjs.com/package/web3)
     -  [ethers](https://www.npmjs.com/package/ethers)
   -  npm
-      - [safepal-web3modal](https://www.npmjs.com/package/safepal-web3modal) 
+      - [web3modal](https://www.npmjs.com/package/web3modal) 
 ```js
-//npm install safepal-web3modal  
-// fork from https://github.com/WalletConnect/web3modal  https://github.com/WalletConnect/web3modal/issues/574
-import web3modal from 'safepal-web3modal';
+//npm install web3modal  
+import web3modal from 'web3modal';
 const web3Modal = new Web3Modal({
   network: 'mainnet', // optional
   cacheProvider: true, // optional
@@ -459,10 +458,9 @@ We strongly recommend reloading the page on chain changes, unless you have good 
   - `eth_signTypedData_v3`
   - `eth_signTypedData_v4`
   
-  You can refer to  docs
+  You can refer to docs
   - [signing-data-with-metamask](https://docs.metamask.io/guide/signing-data.html#signing-data-with-metamask)
   - [eth-sig-util](https://github.com/MetaMask/eth-sig-util).
-  - [demo](https://github.com/SafePalWallet/example/tree/master/evm-dapp-demo/test-dapp)
 
 ## Errors
 
