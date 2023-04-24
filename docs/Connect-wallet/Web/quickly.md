@@ -110,10 +110,10 @@ If the developer has not connected to other Chrome extension wallets using the a
 
 ### API
 
-- [EVM](/guide/Web/ethereum.html)
-- [Solana](/guide/Web/solana.html)
-- [Tron](/guide/Web/tron.html)
-- [Aptos](/guide/Web/aptos.html)
+- [EVM](/Connect-wallet/Web/ethereum.html)
+- [Solana](/Connect-wallet/Web/solana.html)
+- [Tron](/Connect-wallet/Web/tron.html)
+- [Aptos](/Connect-wallet/Web/aptos.html)
 
 ### Third-party npm packages supported
 

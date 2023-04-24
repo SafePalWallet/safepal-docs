@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SafePalWallet/docs/"
+    "url": "https://github.com/SafePalWallet/safepal-docs/"
   },
   "keywords": [
     "documentation",
@@ -22,9 +22,9 @@
   "author": "SafePal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SafePalWallet/docs/issues"
+    "url": "https://github.com/SafePalWallet/safepal-docs/issues"
   },
-  "homepage": "https://github.com/SafePalWallet/docs",
+  "homepage": "https://github.com/SafePalWallet/safepal-docs",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.4",
     "@vuepress/plugin-medium-zoom": "^1.5.4",
