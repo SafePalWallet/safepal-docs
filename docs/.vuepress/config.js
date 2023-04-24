@@ -56,7 +56,7 @@ module.exports = (_ctx) => ({
   theme: '@vuepress/theme-default',
 
   themeConfig: {
-    repo: 'SafePalWallet/docs',
+    repo: 'SafePalWallet/safepal-docs',
     docsDir: 'docs',
     docsBranch: 'main',
     editLinks: true,

@@ -1,7 +1,7 @@
 module.exports = [
   {
     text: 'Guide',
-    link: '/guide/',
+    link: '/Connect-wallet/',
   },
   {
     text: 'Homepage',
