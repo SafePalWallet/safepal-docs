@@ -9,13 +9,13 @@ You have connected to Chrome extension wallets (including MetaMask) with the sam
 
 **What’s the easiest way to connect to SafePal Wallet**
 
- Check if the provider is `window.safepal`, if not, please replace it with the exclusive SafePal provider `window.safepal`.
+ Check if the provider is `window.safepalProvider`, if not, please replace it with the exclusive SafePal provider `window.safepalProvider`.
 
 For example, see below:
 
 ```JS
 function getProvider() {
-  const provider = window.safepal;
+  const provider = window.safepalProvider;
   if (!provider) {
     return window.open('https://www.safepal.com/download');
   }
@@ -110,10 +110,10 @@ If the developer has not connected to other Chrome extension wallets using the a
 
 ### API
 
-- [EVM](/guide/wallet/ethereum.html)
-- [Solana](/guide/wallet/solana.html)
-- [Tron](/guide/wallet/tron.html)
-- [Aptos](/guide/wallet/aptos.html)
+- [EVM](/guide/Web/ethereum.html)
+- [Solana](/guide/Web/solana.html)
+- [Tron](/guide/Web/tron.html)
+- [Aptos](/guide/Web/aptos.html)
 
 ### Third-party npm packages supported
 
