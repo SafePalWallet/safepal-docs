@@ -6,7 +6,7 @@ SafePal injects a global API into websites visited by its users at `window?.safe
 
 ```js
 function getProvider() {
-  const provider = window.safepal && window.safepal.ethereum;
+  const provider = window.safepalProvider;
   if (!provider) {
     window.open('https://safepal.com/en/download?type=2');
     throw "Please go to our official website to download!!"
@@ -30,7 +30,7 @@ The provider API is all you need to create a full-featured web3 application.
 You can refer a third-party base about Web3.0 login to support SafePal Wallet quickly,   such as: 
 
 :::tip Note
-You can  use third-party libraries in conjunction with `window.safepal.ethereum`
+You can  use third-party libraries in conjunction with `window.safepalProvider`
 :::
   - library
     -  [web3js](https://www.npmjs.com/package/web3)
@@ -118,7 +118,7 @@ Provider.isConnected();
 
 ::: tip Note
 **EIP-1102**
-This method is specified by [EIP-1102](https://eips.ethereum.org/EIPS/eip-1102). It is equivalent to the deprecated `safepal.ethereum.enable()` provider API method.
+This method is specified by [EIP-1102](https://eips.ethereum.org/EIPS/eip-1102). It is equivalent to the deprecated `safepalProvider.enable()` provider API method.
 
 Under the hood, it calls wallet_requestPermissions for the eth_accounts permission. Since eth_accounts is currently the only permission, this method is all you need for now.
 :::
