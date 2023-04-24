@@ -5,7 +5,7 @@ window.onload = function () {
     if (element.href == 'https://safepal.com/') {
       element.setAttribute(
         'title',
-        'The Best Decentralized Multi-chain Crypto Wallet'
+        'Managing Your Assets Just Got Easier.'
       );
     }
   });
