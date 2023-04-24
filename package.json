@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "description": "SafePal documentation.",
+  "scripts": {
+    "dev": "yarn start",
+    "start": "node scripts/build.js dev",
+    "build": "node scripts/build.js build",
+    "lint": "prettier '!docs/dist' **/*.{js,json,md,ts} --check",
+    "lint:fix": "yarn lint --write",
+    "view-info": "vuepress view-info docs",
+    "show-help": "vuepress --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SafePalWallet/docs/"
+  },
+  "keywords": [
+    "documentation",
+    "vue",
+    "generator"
+  ],
+  "author": "SafePal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SafePalWallet/docs/issues"
+  },
+  "homepage": "https://github.com/SafePalWallet/docs",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "@vuepress/plugin-medium-zoom": "^1.5.4",
+    "@vuepress/plugin-pwa": "^1.5.4",
+    "@vuepress/theme-vue": "^1.5.4",
+    "dotenv": "^8.2.0",
+    "prettier": "^2.1.1",
+    "vue-tabs-component": "^1.5.0",
+    "vue-toasted": "^1.1.28",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-redirect": "^1.2.4",
+    "vuepress-plugin-tabs": "^0.3.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
+  }
+}
