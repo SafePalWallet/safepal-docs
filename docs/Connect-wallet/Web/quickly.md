@@ -17,7 +17,7 @@ For example, see below:
 function getProvider() {
   const provider = window.safepalProvider;
   if (!provider) {
-    return window.open('https://www.safepal.com/download');
+    return window.open('https://www.safepal.com/download?product=2');
   }
   return provider;
 }
@@ -73,7 +73,7 @@ For example, see below:
 function getProvider() {
   const provider = window.safepal;
   if (!provider) {
-    return window.open('https://www.safepal.com/download');
+    return window.open('https://www.safepal.com/download?product=2');
     throw  `Please guide users to download from our official website`
   }
   return provider;
@@ -97,8 +97,8 @@ For example, see below:
 function getAptosWallet() {
   const provider = window.safepalAptosProvider;
   if (!provider) {
-   return window.open('https://www.safepal.com/download');
-    throw 'Please go to  https://www.safepal.com/download  to download!!';
+   return window.open('https://www.safepal.com/download?product=2');
+    throw 'Please go to  https://www.safepal.com/download?product=2  to download!!';
   }
   return provider;
 }

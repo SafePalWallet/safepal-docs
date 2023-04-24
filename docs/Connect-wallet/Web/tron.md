@@ -1,7 +1,5 @@
 # Tron
 
-We provide [Simple demo](https://github.com/SafePalWallet/download/tree/example/example/tron/dapp) and are compatible with [tronlink dapp](https://developers.tron.network/docs/dapp-integrate-with-tronlink-introduction).
-
 ## Installed or not
 
 ```js

@@ -20,7 +20,7 @@ https://github.com/solana-labs/wallet-adapter/tree/master/packages/wallets
 function getProvider() {
   const provider = window.safepal;
   if (!provider) {
-    return window.open('https://www.safepal.com/download');
+    return window.open('https://www.safepal.com/download?product=2');
     throw  `Please guide users to download from our official website`
   }
   return provider;
@@ -79,8 +79,7 @@ window.safepal.on('connect', () => console.log('connected!'));
 
 ## sendTransaction
 
+
 You can refer to the following demo :
-[simple demo](https://github.com/SafePalWallet/download/blob/example/example/solana/dapp/index.html)
-[web3 demo](https://github.com/solana-labs/solana/tree/master/web3.js/examples)
 [Token demo](https://github.com/solana-labs/solana-program-library/tree/master/token/js/examples)
 
