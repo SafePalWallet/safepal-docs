@@ -54,11 +54,11 @@
             }
 
             isInstall() {
-                return window.safepalTronProvider && window.tronWeb;
+                return window.SafePalHook && window.tronWeb;
             }
 
             async connect() {
-                await safepalTronProvider.request({ method: "tron_requestAccounts" });
+                await SafePalHook.request({ method: "tron_requestAccounts" });
                 this.selectedAddress = tronWeb.defaultAddress.base58;
 
                 const balance = await tronWeb.trx.getBalance(this.selectedAddress);

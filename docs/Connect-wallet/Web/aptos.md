@@ -1,6 +1,6 @@
 # Aptos
 
-To use SafePal Wallet with your dApp, your users must first install the SafePal Wallet Chrome extension in their browser. SafePal Wallet injects an `safepalAptosProvider` object into the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) of any web app the user visits.
+To use SafePal Wallet with your dApp, your users must first install the SafePal Wallet Chrome extension in their browser. SafePal Wallet injects an `safePal` object into the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) of any web app the user visits.
 
 
 ## npm package
@@ -11,7 +11,7 @@ To use SafePal Wallet with your dApp, your users must first install the SafePal 
 To check if the user has installed SafePal Wallet, perform the below check:
 
 ```js
-const isSafePalInstalled = window.safepalAptosProvider;
+const isSafePalInstalled = window.safePal;
 ```
 
 ## Detecting the Aptos provider
@@ -20,7 +20,7 @@ If SafePal Wallet is not installed, you can prompt the user to first install Saf
 
 ```js
 function getAptosWallet() {
-  const provider = window.safepalAptosProvider;
+  const provider = window.safePal;
   if (!provider) {
     return window.open('https://www.safepal.com/download?product=2');
     throw  `Please guide users to download from our official website`
@@ -31,7 +31,7 @@ function getAptosWallet() {
 
 ## Connecting to SafePal Wallet
 
-After confirming that the web app has the `safepalAptosProvider` object, we can connect to SafePal Wallet by calling `wallet.connect()`.
+After confirming that the web app has the `safePal` object, we can connect to SafePal Wallet by calling `wallet.connect()`.
 
 When you call `wallet.connect()`, it prompts the user to allow your web app to make additional calls to SafePal Wallet, and obtains from the user basic information such as the address and public key.
 
@@ -98,9 +98,9 @@ const options = {
 } 
 
 try {
-    const pendingTransaction = await window.safepalAptosProvider.signAndSubmitTransaction(transaction);
+    const pendingTransaction = await window.safePal.signAndSubmitTransaction(transaction);
 
-    // const pendingTransaction = await window.safepalAptosProvider.signAndSubmitTransaction(transaction, options);
+    // const pendingTransaction = await window.safePal.signAndSubmitTransaction(transaction, options);
 
     // In most cases a dApp will want to wait for the transaction, in these cases you can use the typescript sdk
     const client = new AptosClient('https://testnet.aptoslabs.com');
@@ -140,8 +140,8 @@ const options = {
 } 
 
 try {
-    const signTransaction = await window.safepalAptosProvider.signTransaction(transaction)
-    // const signTransaction = await window.safepalAptosProvider.signTransaction(transaction, options)
+    const signTransaction = await window.safePal.signTransaction(transaction)
+    // const signTransaction = await window.safePal.signTransaction(transaction, options)
 } catch (error) {
     // see "Errors"
 }
@@ -200,11 +200,11 @@ const message = "hello";
 const nonce = "random_string"
 
 try {
-  const response = await window.safepalAptosProvider.signMessage({
+  const response = await window.safePal.signMessage({
     message,
     nonce,
   });
-  const { publicKey } = await window.safepalAptosProvider.account();
+  const { publicKey } = await window.safePal.account();
   // Remove the 0x prefix
   const key = publicKey!.slice(2, 66);
   const verified = nacl.sign.detached.verify(Buffer.from(response.fullMessage),
@@ -239,10 +239,10 @@ enum Network {
 }
 
 // Current network
-let network = await window.safepalAptosProvider.network();
+let network = await window.safePal.network();
 
 // event listener for network changing
-window.safepalAptosProvider.onNetworkChange((newNetwork) => {
+window.safePal.onNetworkChange((newNetwork) => {
   network = newNetwork; // { networkName: 'Mainnet' }
 });
 ```
@@ -253,16 +253,16 @@ In SafePal Wallet, a user may change accounts while interacting with your app. T
 
 ```ts
 // get current account
-let currentAccount = await window.safepalAptosProvider.account();
+let currentAccount = await window.safePal.account();
 
 // event listener for disconnecting
-window.safepalAptosProvider.onAccountChange((newAccount) => {
+window.safePal.onAccountChange((newAccount) => {
   // If the new account has already connected to your app then the newAccount will be returned
   if (newAccount) {
     currentAccount = newAccount;
   } else {
     // Otherwise you will need to ask to connect to the new account
-    currentAccount = window.safepalAptosProvider.connect();
+    currentAccount = window.safePal.connect();
   }
 });
 ```

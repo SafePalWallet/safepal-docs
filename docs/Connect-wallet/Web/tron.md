@@ -7,15 +7,15 @@ We provide [simple demo](https://github.com/SafePalWallet/safepal-docs/tree/main
 ## Installed or not
 
 ```js
-const isSafePalInstalled = window.safepalTronProvider && window.tronWeb;
+const isSafePalInstalled = window.SafePalHook && window.tronWeb;
 ```
 
 ## eth_requestAccounts(request authorization to connect)
 
 ```js
 try {
-  await tronLink.request({ method: 'tron_requestAccounts' });
-  const address = safepalTronProvider.defaultAddress.base58;
+  await SafePalHook.request({ method: 'tron_requestAccounts' });
+  const address = SafePalHook.defaultAddress.base58;
   const balance = await tronWeb.trx.getBalance(address);
 } catch {}
 ```
