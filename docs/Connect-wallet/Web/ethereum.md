@@ -6,7 +6,7 @@ SafePal injects a global API into websites visited by its users at `window.safep
 
 ```js
 function getProvider() {
-  const provider = window.safepalProvider;
+  const provider = window.safepalProvider ;
   if (!provider) {
     window.open('https://www.safepal.com/download?product=2');
     throw "Please go to our official website to download!!"

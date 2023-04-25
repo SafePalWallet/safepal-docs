@@ -1,0 +1,260 @@
+[
+  {
+    "id": 2,
+    "name": "Ethereum",
+    "chain": "eth",
+  
+    "network": {
+      "chainId": 1,
+      "chainName": "Ethereum",
+      "rpc": [],
+      "swapGasFee": 0.01,
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "BSC",
+    "chain": "bnb",
+
+    "network": {
+      "chainId": 56,
+      "chainName": "BSC",
+      "rpc": [],
+      "swapGasFee": 0.0003,
+      "nativeCurrency": {
+        "name": "BNB",
+        "symbol": "BNB",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Tron",
+    "chain": "trx",
+    "network": {
+      "chainId": "",
+      "chainName": "Tron",
+      "rpc": [],
+      "swapGasFee": 40,
+      "nativeCurrency": {
+        "name": "TRX",
+        "symbol": "TRX",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "HECO",
+    "chain": "ht",
+    "network": {
+      "chainId": 128,
+      "chainName": "Huobi ECO",
+      "rpc": [],
+      "swapGasFee": 0.001,
+      "nativeCurrency": {
+        "name": "HT",
+        "symbol": "HT",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "KLAY",
+    "chain": "klay",
+    "network": {
+      "chainId": "0x2019",
+      "chainName": "KLAY",
+      "rpc": [],
+      "swapGasFee": 0.15,
+      "nativeCurrency": {
+        "name": "KLAY",
+        "symbol": "KLAY",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "Cronos",
+    "chain": "crol2",
+    "network": {
+      "chainId": 25,
+      "chainName": "Cronos",
+      "rpc": [],
+      "swapGasFee": 2.8,
+      "nativeCurrency": {
+        "name": "CRO",
+        "symbol": "CRO",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "Optimism",
+    "chain": "optimism",
+    "network": {
+      "chainId": 10,
+      "chainName": "Optimism",
+      "rpc": [],
+      "swapGasFee": 0.0015,
+      "nativeCurrency": {
+        "name": "ETH",
+        "symbol": "ETH",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "Polygon",
+    "chain": "matic",
+    "network": {
+      "chainId": 137,
+      "chainName": "Polygon",
+      "rpc": [],
+      "swapGasFee": 0.05,
+      "nativeCurrency": {
+        "name": "MATIC",
+        "symbol": "MATIC",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "Harmony",
+    "chain": "one",
+    "network": {
+      "chainId": 1666600000,
+      "chainName": "Harmony",
+      "rpc": [],
+      "swapGasFee": 0.03,
+      "nativeCurrency": {
+        "name": "ONE",
+        "symbol": "ONE",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "OKX",
+    "chain": "okt",
+    "network": {
+      "chainId": 66,
+      "chainName": "OKX",
+      "rpc": [],
+      "swapGasFee": 0.001,
+      "nativeCurrency": {
+        "name": "OKT",
+        "symbol": "OKT",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Fantom",
+    "chain": "ftm",
+    "network": {
+      "chainId": 250,
+      "chainName": "Fantom",
+      "rpc": [],
+      "swapGasFee": 0.22,
+      "nativeCurrency": {
+        "name": "FTM",
+        "symbol": "FTM",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "KCC",
+    "chain": "kcs",
+    "network": {
+      "chainId": 321,
+      "chainName": "KCC",
+      "rpc": [],
+      "swapGasFee": 0.001,
+      "nativeCurrency": {
+        "name": "KCC",
+        "symbol": "KCS",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "Avax",
+    "chain": "avax_c",
+    "network": {
+      "chainId": 43114,
+      "chainName": "Avalanche",
+      "rpc": [],
+      "swapGasFee": 0.004,
+      "nativeCurrency": {
+        "name": "AVAX",
+        "symbol": "AVAX",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Solana",
+    "chain": "sol",
+    "network": {
+      "chainId": "",
+      "chainName": "Solana",
+      "rpc": ["https://solana-api.projectserum.com"],
+      "swapGasFee": 0.00005,
+      "nativeCurrency": {
+        "name": "SOL",
+        "symbol": "SOL",
+        "decimal": 9
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Arbitrum",
+    "chain": "arbitrum",
+    "network": {
+      "chainId": 42161,
+      "chainName": "Arbitrum",
+      "rpc": [],
+      "swapGasFee": 0.0005,
+      "nativeCurrency": {
+        "name": "ARBITRUM",
+        "symbol": "ARBITRUM",
+        "decimal": 18
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "FUSE",
+    "chain": "fuse",
+    "network": {
+      "chainId": 66,
+      "chainName": "FUSE",
+      "rpc": ["https://rpc.fuse.io"],
+      "swapGasFee": 0.001,
+      "nativeCurrency": {
+        "name": "FUSE",
+        "symbol": "FUSE",
+        "decimal": 18
+      }
+    }
+  }
+]
