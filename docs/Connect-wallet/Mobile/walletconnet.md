@@ -11,6 +11,8 @@ For more detailed document, please refer to the [https://docs.walletconnect.com]
 - [Standalone Client](https://docs.walletconnect.com/quick-start/dapps/client)
 - [example](https://github.com/WalletConnect/web-examples)
 
+we provide a [simple demo](https://github.com/SafePalWallet/safepal-docs/tree/main/example/walletConnect)
+
     npm install --save @walletconnect/client @walletconnect/qrcode-modal
 
 ```js

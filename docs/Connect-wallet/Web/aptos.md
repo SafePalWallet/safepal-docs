@@ -2,6 +2,9 @@
 
 To use SafePal Wallet with your dApp, your users must first install the SafePal Wallet Chrome extension in their browser. SafePal Wallet injects an `safepalAptosProvider` object into the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) of any web app the user visits.
 
+
+## npm package
+  - [Aptos Wallet Adapter](https://github.com/hippospace/aptos-wallet-adapter) 
   
 ## Installed or not
 
