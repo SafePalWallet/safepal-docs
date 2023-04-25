@@ -1,9 +1,13 @@
 # Tron
 
+
+We provide [simple demo](https://github.com/SafePalWallet/safepal-docs/tree/main/example/tron/dapp) and are compatible with [tronlink dapp](https://developers.tron.network/docs/tronlink-integration).
+
+
 ## Installed or not
 
 ```js
-const isSafePalInstalled = window.tronLink && window.isSafePal;
+const isSafePalInstalled = window.safepalTronProvider && window.tronWeb;
 ```
 
 ## eth_requestAccounts(request authorization to connect)
@@ -11,7 +15,7 @@ const isSafePalInstalled = window.tronLink && window.isSafePal;
 ```js
 try {
   await tronLink.request({ method: 'tron_requestAccounts' });
-  const address = tronWeb.defaultAddress.base58;
+  const address = safepalTronProvider.defaultAddress.base58;
   const balance = await tronWeb.trx.getBalance(address);
 } catch {}
 ```

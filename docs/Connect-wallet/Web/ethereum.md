@@ -460,7 +460,8 @@ We strongly recommend reloading the page on chain changes, unless you have good 
   
   You can refer to docs
   - [signing-data-with-metamask](https://docs.metamask.io/guide/signing-data.html#signing-data-with-metamask)
-  - [eth-sig-util](https://github.com/MetaMask/eth-sig-util).
+  - [eth-sig-util](https://github.com/MetaMask/eth-sig-util)
+  - [demo](https://github.com/SafePalWallet/safepal-docs/tree/main/example/eth/dapp)
 
 ## Errors
 

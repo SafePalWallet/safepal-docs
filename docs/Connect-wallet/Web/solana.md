@@ -81,5 +81,8 @@ window.safepal.on('connect', () => console.log('connected!'));
 
 
 You can refer to the following demo :
+[simple demo](https://github.com/SafePalWallet/safepal-docs/tree/main/example/solana/dapp)
+[web3 demo](https://github.com/solana-labs/solana-web3.js)
 [Token demo](https://github.com/solana-labs/solana-program-library/tree/master/token/js/examples)
+
 
