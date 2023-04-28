@@ -7,3 +7,9 @@ The SafePal platform serves more than 10 million users across the globe and supp
 
 The SafePal S1 is the first and only hardware wallet to receive a strategic investment in 2018 by Binance Labs- It is the flagship cold-storage product trusted in over 200 regions and countries with advanced security features that keeps private keys offline and secure, without Bluetooth, WiFi, NFC, or radio frequencies.
 
+## Why Choose SafePal
+
+- Trust by 10M+ verified users
+- Serving 200+ countries
+- Supporting 100+ blockchains
+- Provide mobile app, browser extension, and hardware wallet for users
