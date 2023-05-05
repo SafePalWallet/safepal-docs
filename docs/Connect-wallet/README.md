@@ -9,7 +9,8 @@ The SafePal S1 is the first and only hardware wallet to receive a strategic inve
 
 ## Why Choose SafePal
 
-- Trust by 10M+ verified users
+- Trusted by 10M+ verified users
 - Serving 200+ countries
 - Supporting 100+ blockchains
-- Provide mobile app, browser extension, and hardware wallet for users
+- Mobile app, browser extension, and hardware wallet engages a wide range of crypto users
+- Backed by industry leaders such as Binance, Animoca Brands, and Superscrypt
