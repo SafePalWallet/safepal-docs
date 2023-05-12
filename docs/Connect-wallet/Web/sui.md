@@ -1,4 +1,4 @@
-# Sui(updating..)
+# Sui
 
 This doc is for Sui Testnet. SafePal will update the doc as Sui upgrades.
 
@@ -6,11 +6,11 @@ This doc is for Sui Testnet. SafePal will update the doc as Sui upgrades.
 
  **This feature is supported by the following versions of SafePal Wallet.**
  
-| platform           | version    | description     |
-| ------------------ | ---------- | ----------------|
-| chrome Extension   | >=v2.12.0  | testnet         |
-| App(ios)           | >=v3.9.1   | testnet         |
-| App(android)       | >=v3.9.1   | testnet         |
+| platform           | version    | description      |
+| ------------------ | ---------- | ---------------- |
+| chrome Extension   | >=v2.12.0  | Testnet, Mainnet |
+| App(ios)           | >=v3.9.2   | Testnet, Mainnet |
+| App(android)       | >=v3.9.2   | Testnet, Mainnet |
 
 
 ## npm package
