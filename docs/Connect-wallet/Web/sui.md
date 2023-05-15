@@ -8,9 +8,9 @@ This doc is for Sui Testnet. SafePal will update the doc as Sui upgrades.
  
 | platform           | version    | description      |
 | ------------------ | ---------- | ---------------- |
-| chrome Extension   | >=v2.12.0  | Testnet, Mainnet |
-| App(ios)           | >=v3.9.2   | Testnet, Mainnet |
-| App(android)       | >=v3.9.2   | Testnet, Mainnet |
+| Chrome Extension   | >=v2.12.0  | Testnet, Mainnet |
+| App(iOS)           | >=v3.9.2   | Testnet, Mainnet |
+| App(Android)       | >=v3.9.2   | Testnet, Mainnet |
 
 
 ## Quick access
