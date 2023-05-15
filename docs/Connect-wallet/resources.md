@@ -1,2 +1,2 @@
 # resources
-[website](https://www.safepal.com/)
+[SafePal Brand Resource Center](https://www.safepal.com/brandassets/)
